@@ -37,7 +37,7 @@
 				output.prepend(feedback, response);
 				feedback.innerText = query;
 
-				fetch("./api/query/" + encodeURIComponent(query))
+				fetch(location.href + "/api/query/" + encodeURIComponent(query))
 					.then(responseObject => responseObject.json())
 					.then(value => response.innerText = JSON.stringify(value))
 					.catch((e) => response.innerText = e);
