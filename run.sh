@@ -1,3 +1,3 @@
 #!/bin/sh
 
-p7thon3 interface/app.py
+python3 interface/app.py
