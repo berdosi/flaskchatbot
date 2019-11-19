@@ -10,4 +10,6 @@ def api_call(apipath):
     return jsonify({"error": "Not implemented.", "requested": apipath})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(
+        host="0.0.0.0",
+        port=5000)
