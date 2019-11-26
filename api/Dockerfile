@@ -7,8 +7,8 @@ RUN apk add py3-pip
 
 RUN pip3 install flask
 
-COPY interface /interface
+COPY . /api
 
-EXPOSE 5000
+EXPOSE 5001
 
-CMD [ "python3", "/interface/app.py" ]
+CMD [ "python3", "/api/app.py" ]
